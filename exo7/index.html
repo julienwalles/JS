@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercice_7</title>
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+
+        <form>
+            <label for="shoeSize">Pointure : </label><input type="text" id="shoeSize" name="shoeSize"/><br/>
+            <label for="yearOfBirth">Année de naissance : </label><input type="text" id="yearOfBirth" name="yearOfBirth"/><br/>
+            <button id="submit" name="submit">Valider</button>
+        </form>
+
+        <script>
+            document.getElementById("submit").addEventListener("click", result)
+
+            function result() {
+
+                var size = document.getElementById("shoeSize").value;
+                var year = document.getElementById("yearOfBirth").value;
+
+                var total = (size * 2 + 5) * 50 - year + 1766;
+
+                alert(parseInt(total, 10));
+            }
+
+        </script>
+
+    </body>
+</html>
