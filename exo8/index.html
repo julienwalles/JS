@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercice_8</title>
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+
+        <form>
+            <label for="age">Votre âge : </label><input type="text" id="age" name="age"/><br/>
+            <button id="submit" name="submit">Valider</button>
+        </form>
+
+        <script>
+
+            document.getElementById("submit").addEventListener("click", majorite)
+
+            function majorite() {
+
+                var year = document.getElementById("age").value;
+
+                if (year>=18) {
+
+                    alert("vous êtes majeur");
+                }
+
+                else alert("Vous êtes mineur");
+
+            }
+
+        </script>
+    </body>
+</html>
+
