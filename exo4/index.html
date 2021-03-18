@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form onsubmit="return myFunction()">
+        <label for="lastname">Nom : </label><input type="text" name="lastname" id="lastname"/>
+        <label for="firstname">Prénom : </label><input type="text" name="firstname" id="firstname"/>
+        <label for="city">Ville : </label><input type="text" name="city" id="city"/>
+        <button  name="submit" id="submit">Valider</button>
+    </form>
+
+   <script>
+        function myFunction() {
+            var saisie = document.getElementById("lastname").value;
+            var firstName = document.getElementById("firstname").value;
+            var country = document.getElementById("city").value;
+
+           alert(saisie + "\n" + firstName + "\n" + country);
+        }
+    </script> 
+</body>
+</html>
