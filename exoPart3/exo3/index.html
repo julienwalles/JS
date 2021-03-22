@@ -9,7 +9,7 @@
 
 <body>
 
-    <div id="text">
+    <div class="text2" id="text">
         <p>
             Tara, originellement nommée Antarctica puis Seamaster, est une goélette française destinée à la fois à
             l'exploration
@@ -28,28 +28,31 @@
     </div>
 
     <div>
-        <div id="clrvert" class="color green"></div>
+        <div onclick="myFunction()" class="color green"></div>
         <div id="clrrge" class="color red"></div>
         <div id="clrblue" class="color blue"></div>
     </div>
 
     <script>
-        document.querySelector(".color").addEventListener("click", toGreen)
-
-        function toGreen() {
-            (document.getElementById("text").style.color = "green");
-        }
-
         document.getElementById("clrrge").addEventListener("click", toRed)
 
         function toRed() {
-            (document.getElementById("text").style.color = "red");
+            document.getElementById("text").style.color = "red";
         }
 
         document.getElementById("clrblue").addEventListener("click", toBlue)
 
         function toBlue() {
-            (document.getElementById("text").style.color = "blue");
+            document.getElementById("text").style.color = "blue";
+        }
+
+        document.getElementById("clrvert").addEventListener("click", myFunction)
+
+        function myFunction() {
+
+            var x = document.getElementsByClassName("text2");
+
+            x[0].style.color = "green";
         }
     </script>
 </body>
