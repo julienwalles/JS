@@ -1,30 +1,85 @@
-
 window.onload = () => {
-    const form1 = document.querySelector('#addForm1');
-    const form2 = document.querySelector('#addForm2');
-  
-    let items = document.getElementById('items');
-    let submit = document.getElementById('submit');
-  
-    let editItem = null;
-  
-    form1.addEventListener('submit', addItem);
-    items.addEventListener('click', removeItem);
-  };
-  
-  function addItem(e) {
-    e.preventDefault();
-    var taskInput=document.getElementById('form2');
+  const form1 = document.querySelector('#addForm1'); // variable pour le form1
+  const form2 = document.querySelector('#addForm2'); //variable pour le form2
+
+  let items = document.getElementById('items'); // variable pour form2
+  let submit = document.getElementById('submit'); // variable pour btn submit
+
+  let editItem = null;
+
+  form1.addEventListener('submit', addItem);
+  items.addEventListener('click', removeItem);
+};
+
+function addItem(e) {
+  e.preventDefault();
+
+  var newLi = document.createElement("li"); //variable pour créer des élements li 
+
+  var items = document.getElementById('items');
+
+  var text_input = document.getElementById("item").value;
+
+  var t = document.createTextNode(text_input);
+  newLi.appendChild(t);
+
+  if (text_input != "") {
+
+    items.appendChild(newLi);
+
+  } else {
+
+    alert("Aucun texte saisi!");
   }
- 
-  function removeItem(e) {
-    e.preventDefault();
-    /**
-     *
-     * a vous de jouer
-     */
-  }
+
+  document.getElementById("item").value = ""; // vider le champ input
   
-  function toggleButton(ref, btnID) {
-    addButton=document.getElementsByTagName("btnID")[0];
+    // var span = document.createElement("span");
+  
+    // var edit_txt = document.createTextNode("Edit");
+  
+    // span.className = "close";
+  
+    // span.appendChild(edit_txt);
+  
+    // newLi.appendChild(span);
+
+    var span = document.createElement("span");
+  
+    var edit_txt = document.createElement("button");
+  
+    span.className = "edit";
+  
+    span.append(edit_txt);
+  
+    newLi.appendChild(span);
+
+    var span2 = document.createElement("span");
+  
+    var edit2_txt = document.createElement("button");
+  
+    span2.className = "delete";
+  
+    span2.append(edit2_txt);
+  
+    newLi.appendChild(span2);
   }
+
+  
+
+
+
+
+function removeItem(e) {
+  e.preventDefault();
+  /**
+   *
+   * a vous de jouer
+   */
+}
+
+function toggleButton(ref, btnID) {
+
+
+
+}

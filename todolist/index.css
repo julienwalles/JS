@@ -1,0 +1,29 @@
+
+#addForm2 li {
+    list-style-type: none;
+}
+
+li {
+    border:solid chocolate 3px;
+    height: 45px;
+    padding: 8px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    justify-content:end;
+
+}
+
+li:hover {
+    background-color:grey;
+}
+
+button {
+    width: 35%;
+    height: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+span {
+    float: right;
+}
