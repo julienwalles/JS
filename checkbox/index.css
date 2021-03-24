@@ -1,4 +1,84 @@
+h1 {
+    text-align: center;
+    background-color: brown;
+}
 
-.formulaire1, .boutons, .formulaire2 {
+h3 {
+    text-align: center;
+    color: darkmagenta;
+}
+
+section {
+
+    display: flex;
+    justify-content: space-around;
+}
+
+#form1 {
+    border: solid royalblue 4px;
+}
+
+#form2 {
+    border: solid royalblue 4px;
+}
+
+#form1,
+#boutons,
+#form2 {
+
     display: inline-block;
+    list-style-type: none;
+}
+
+#form1,
+#form2 {
+    width: 30%;
+}
+
+#boutons {
+
+    margin-top: 100px;
+}
+
+#btn1 {
+    margin-bottom: 30px;
+    background-color: seagreen;
+}
+
+#btn2 {
+    background-color: cadetblue;
+}
+
+form1 li,
+form2 li {
+    float: left;
+    display: block;
+
+}
+
+li {
+    margin-bottom: 30px;
+    padding-left: 60px;
+    padding-right: 20px;
+    padding-top: 20px;
+    
+}
+
+label {
+    display: block;
+    float: left;
+    width: 110px;
+    
+} 
+
+#lab {
+    
+    justify-content:safe;
+}
+
+ #un, #deux {
+    border: solid royalblue 4px;
+    padding-left: 10px;
+    width: 21%;
+    font-weight: bold;
 }

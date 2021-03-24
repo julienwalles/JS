@@ -1,80 +1,91 @@
-    
-    
-   //  document.getElementByClassName("bouton1").addEventListener("click", onRight);
+function rappel() { // compter le nbre d'items ds chaque liste ts les 100ms
 
-    function onRight() {
+   // let number_items = document.e.elements["check[]"];
 
-      if(item1.checked ==1) {
+   let number_item = document.querySelectorAll("#form1 li");
 
-         document.getElementById("formulaire2").appendChild(check1);
-         item1.checked = false;
+   let number_items2 = document.querySelectorAll("#form2 li");
+
+   document.getElementById("un").innerText = number_item.length + " " + "items";
+
+   document.getElementById("deux").innerText = number_items2.length + " " + "items";
+
+   setTimeout(rappel, 100);
+}
+
+rappel();
+
+{
+// // bouton right désactivé au départ
+
+// let but = document.getElementById("btn1");
+
+// but.disabled = true;
+
+// // activer le bouton right qd checked
+
+// function enabled_btn() {  
+
+//    but.disabled = false;
+// }
+
+// // bouton letf désactivé au départ
+
+// let but1 = document.getElementById("btn2");
+
+// but1.disabled = true;
+
+// // activer le bouton left qd checked
+
+// function enabled_btn2() { 
+//    but1.disabled = false;
+// }
+
+// deplacer items de liste 1 vets liste 2
+}
+
+function toRight() { 
+
+   // cBoxes = document.e.elements["check[]"];
+   item = document.getElementsByTagName("li");
+   cBoxes = document.querySelectorAll(".item");
+
+
+   for (i = 0; i <= cBoxes.length; i++) {
+
+
+      if (cBoxes[i].checked) {
+         document.getElementById("form2").appendChild(item[i]);
+         cBoxes[i].checked = false;
 
       }
-
-      if(item2.checked ==1) {
-
-         document.getElementById("formulaire2").appendChild(check2);
-         item2.checked = false;
-      }
-
-
-      if(item3.checked ==1) {
-
-         document.getElementById("formulaire2").appendChild(check3);
-         item3.checked = false;
-      }
-
-      if(item4.checked ==1) {
-
-         document.getElementById("formulaire2").appendChild(check4);
-         item4.checked = false;
-      }
-
-      if(item5.checked ==1) {
-
-         document.getElementById("formulaire2").appendChild(check5);
-         item5.checked = false;
-      }
-    }
-
-    function onLeft() {
-
-      // if(item6.checked ==1) {
-
-      //    document.getElementById("formulaire1").appendChild(check6);
+      //  else {
+      //    but.disabled = true;
       // }
 
-      // if(item7.checked ==1) {
-
-      //    document.getElementById("formulaire1").appendChild(check7);
-      // }
-
-
-      // if(item8.checked ==1) {
-
-      //    document.getElementById("formulaire1").appendChild(check8);
-      // }
-
-      // if(item9.checked ==1) {
-
-      //    document.getElementById("formulaire1").appendChild(check9);
-      // }
-
-      // if(item10.checked ==1) {
-
-      //    document.getElementById("formulaire1").appendChild(check10);
-      // }
-      var checkbox = document.querySelector("input[name=checkbox]");
-
-      checkbox.addEventListener('change', function() {
-         if (this.checked) {
-
-            document.getElementById("formulaire2").appendChild(this);
-         }
-
-         else {
-            alert("items");
-         }
-
-    }   
    }
+}
+
+// deplacer items de liste 2 vers liste 1
+
+function toLeft() { 
+
+   // cBoxes = document.e.elements["check[]"];
+   itemss = document.getElementsByTagName("li");
+   cBoxes2 = document.querySelectorAll(".item");
+
+
+   for (i = 0; i <= cBoxes2.length; i++) {
+
+      if (cBoxes2[i].checked) {
+         document.getElementById("form1").appendChild(itemss[i]);
+         cBoxes2[i].checked = false;
+
+      } 
+      // else {
+      //    but1.disabled = true;
+      // }
+   }
+
+
+}
