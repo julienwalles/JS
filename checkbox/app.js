@@ -56,6 +56,7 @@ function toRight() {
 
       if (cBoxes[i].checked) {
          document.getElementById("form2").appendChild(item[i]);
+         
          cBoxes[i].checked = false;
 
       }
