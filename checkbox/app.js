@@ -15,35 +15,6 @@ function rappel() { // compter le nbre d'items ds chaque liste ts les 100ms
 
 rappel();
 
-{
-// // bouton right désactivé au départ
-
-// let but = document.getElementById("btn1");
-
-// but.disabled = true;
-
-// // activer le bouton right qd checked
-
-// function enabled_btn() {  
-
-//    but.disabled = false;
-// }
-
-// // bouton letf désactivé au départ
-
-// let but1 = document.getElementById("btn2");
-
-// but1.disabled = true;
-
-// // activer le bouton left qd checked
-
-// function enabled_btn2() { 
-//    but1.disabled = false;
-// }
-
-// deplacer items de liste 1 vets liste 2
-}
-
 function toRight() { 
 
    // cBoxes = document.e.elements["check[]"];
