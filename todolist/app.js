@@ -1,18 +1,17 @@
-window.onload = () => {
+// window.onload = () => {
 
-  const form1 = document.querySelector('#addForm1'); // variable pour le form1
-  const form2 = document.querySelector('#addForm2'); //variable pour le form2
-
-
-  let items = document.getElementById('items'); // variable pour form2
-  let submit = document.getElementById('submit'); // variable pour btn submit
+//   const form1 = document.querySelector('#addForm1'); // variable pour le form1
+//   const form2 = document.querySelector('#addForm2'); //variable pour le form2
 
 
-  form1.addEventListener('submit', addItem);
-  items.addEventListener('click', removeItem);
+//   let items = document.getElementById('items'); // variable pour form2
+//   let submit = document.getElementById('submit'); // variable pour btn submit
 
 
-};
+//   form1.addEventListener('submit', addItem);
+//   items.addEventListener('click', removeItem);
+
+// }; A METTRE QUE SI LE SCRIPT EST PLACE DANS LE HEADER
 
 function addItem(e) {
   e.preventDefault();
@@ -84,15 +83,6 @@ function addItem(e) {
     }
   }
 }
-//remettre l'item édité à sa place
-
-
-
-
-
-
-
-
 
 function removeItem(e) {
   e.preventDefault();
