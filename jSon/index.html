@@ -6,16 +6,36 @@
   <meta  name = " viewport " content = " width = device-width, initial-scale = 1.0 " >
   <link  rel = " stylesheet " href = " https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css " >
   <title > Liste des étudiants </title>
+
+  <style>
+    #formJSon, p{
+      width: 50%;
+      display: inline-block;
+    }
+  </style>
 </head>
 
 <body >
 
     <form id="formJSon">
-        <ul id="items"></ul>
+        <ul id="items" ></ul>
     </form>
+
+    <button type="button" class="btn btn-success">Edit</button>
+    <button type="button" class="btn btn-danger">Delete</button>
+
+    <button type="button" onclick="loadDoc()">Afficher </button>
+    <div id="dem">
+      <h2>Ajax</h2>
+      
+      
+    </div>
+ 
+    
 
   <script  src = "/jSon/students.js"></script>
   <script  src = "/jSon/app.js"> </script>
+  <script  src = "/jSon/students.json"></script>
   
 </body>
 
