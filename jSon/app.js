@@ -64,8 +64,8 @@ function loadDoc() {
 
                 btnDel.addEventListener("click", del);
          
-                function del() {
-                   etdnt.parentNode.removeChild(etdnt);             
+                function del(ert) {
+                   ert.target.parentNode.remove();             
                 }
             }
         }
